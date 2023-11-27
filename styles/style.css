@@ -1,0 +1,98 @@
+@import url("./footer.css");
+@import url("./register.css");
+@import url("./login.css");
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+* {
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+}
+header nav div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav div a {
+  padding: 10px 10px;
+  margin: 0.3rem 1rem;
+  text-align: center;
+  width: 100%;
+  border-radius: 15px;
+  background: beige;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+header nav div a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3vh;
+  border-radius: 0px 0px 15px 15px;
+  margin-bottom: 1rem;
+  width: 70%;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+
+section {
+  margin: 2rem 10vw;
+}
+.img {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin-bottom: 10vh;
+}
+.img figure {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.img figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.frage-container {
+  margin: 2rem 0;
+  width: 650px;
+  border: black 2px solid;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.frage {
+  text-decoration: underline;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+  color: rgb(54, 54, 54);
+  text-underline-offset: 4px;
+}
+
+.antwort {
+  color: black;
+}

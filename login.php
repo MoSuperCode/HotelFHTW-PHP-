@@ -11,7 +11,6 @@
       href="../fonts/material-icon/css/material-design-iconic-font.min.css"
     />
     <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css" />
   </head>
     <body>
     <header>
@@ -19,7 +18,7 @@
     </header>
     <main class="login">
             <div class="container">
-           <?php include("loginForm.php") ?>
+           <?php include("login.inc.php") ?>
 </div>
     </main>
 

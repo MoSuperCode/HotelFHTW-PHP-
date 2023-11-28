@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <form name="register" action="register.php" method="post">
         <label for="Anrede">Anrede:</label><br />
         <select name="anrede" id="anrede">
@@ -56,6 +57,10 @@
         <input type="submit" value="Registrieren" />
       </form>
       <?php 
+      if(isset($_SESSION["email"])) {
+        echo'<p>Bereits ein Konto vorhanden? Hier <a  style="font-style:italic;">Anmelden</a></p>';
+      }
+
      if($_SERVER["REQUEST_METHOD"] == "POST") {
       $anrede = $_POST["anrede"];
       $vorname = $_POST["vorname"];
@@ -119,7 +124,17 @@
                 Username: $username <br>
                 Passwort: $password <br>
                 Bestätigung: $passwordbest";
+                $_SESSION["fname"] = $vorname;
+                $_SESSION["lname"] = $nachname;
+                $_SESSION["email"] = $email;
+                $_SESSION["uname"] = $username;
+                $_SESSION["pwd"] = $password ;
+                $_SESSION["registered"] = true;
+
+                header("Location: ./login.php");
+                exit();
       }
+     
   }
   
 

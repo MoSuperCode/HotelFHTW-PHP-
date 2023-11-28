@@ -1,3 +1,6 @@
+<?php 
+ session_start();
+ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,7 +20,7 @@
     <main>
       <h1>Hotel FHTW</h1>
       <section class="container home">
-        <img src="./img/Gang.jpg" alt="">
+        <img class="img" src="./img/Gang.jpg" alt="">
         <img src="./img/Pool.jpg" alt="">
         <img src="./img/Zimmer.jpg" alt="">
       </section>

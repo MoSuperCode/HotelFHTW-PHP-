@@ -12,6 +12,11 @@
   margin: 0;
 }
 
+.img {
+  font-size: 32px;
+  color: blue;
+}
+
 header nav {
   display: flex;
   justify-content: center;
